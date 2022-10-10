@@ -1,0 +1,8 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "a3project/android_kernel_xiaomi_rosy",
+        "target_path":  "kernel/xiaomi/rosy",
+        "revision":     "android-13"
+    }
+]
