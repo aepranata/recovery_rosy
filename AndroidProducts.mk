@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_rosy.mk
+    $(LOCAL_DIR)/twrp_rosy.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_rosy-user \
-    omni_rosy-userdebug \
-    omni_rosy-eng
+    twrp_rosy-user \
+    twrp_rosy-userdebug \
+    twrp_rosy-eng
