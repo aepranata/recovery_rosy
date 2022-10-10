@@ -4,5 +4,11 @@
         "repository":   "a3project/android_kernel_xiaomi_rosy",
         "target_path":  "kernel/xiaomi/rosy",
         "revision":     "android-13"
+    },
+        {
+        "remote":       "github",
+        "repository":   "a3project/proton-clang",
+        "target_path":  "prebuilts/clang/host/linux-x86/proton-clang",
+        "revision":     "master"
     }
 ]
