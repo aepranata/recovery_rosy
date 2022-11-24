@@ -1,14 +1,14 @@
 [
     {
         "remote":       "github",
-        "repository":   "a3project/android_kernel_xiaomi_rosy",
+        "repository":   "aepranata/android_kernel_xiaomi_rosy",
         "target_path":  "kernel/xiaomi/rosy",
-        "revision":     "android-13"
+        "revision":     "shiro"
     },
         {
-        "remote":       "github",
-        "repository":   "a3project/proton-clang",
-        "target_path":  "prebuilts/clang/host/linux-x86/proton-clang",
+        "remote":       "gitlab",
+        "repository":   "aepranata/atiga-clang",
+        "target_path":  "prebuilts/clang/host/linux-x86/clang-atiga",
         "revision":     "master"
     }
 ]
