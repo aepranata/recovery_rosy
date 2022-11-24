@@ -41,16 +41,18 @@ TARGET_SCREEN_DENSITY := 320
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci
-BOARD_KERNEL_CMDLINE += androidboot.console=ttyHSL0
-BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom msm_rtb.filter=0x237
+BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
 BOARD_KERNEL_CMDLINE += audit=0
-BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8
-BOARD_KERNEL_CMDLINE += earlycon=msm_hsl_uart,0x78af000
+BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78B0000
 BOARD_KERNEL_CMDLINE += ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE += firmware_class.path=/system/etc/firmware
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += loop.max_part=7
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
