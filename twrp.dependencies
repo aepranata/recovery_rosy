@@ -1,0 +1,20 @@
+[
+    {
+        "remote": "github",
+        "repository": "baunilla/android_kernel_xiaomi_rosy",
+        "target_path": "kernel/xiaomi/rosy",
+        "revision": "lineage-19.1"
+    },
+    {
+        "remote": "github",
+        "repository": "LineageOS/android_vendor_qcom_opensource_cryptfs_hw",
+        "target_path": "vendor/qcom/opensource/cryptfs_hw",
+        "revision": "lineage-19.1"
+    },
+    {
+        "remote": "github",
+        "repository": "aepranata/proton-clang",
+        "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
+        "revision": "master"
+    }
+]

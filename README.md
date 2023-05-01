@@ -1,5 +1,4 @@
-# Android device tree for Xiaomi Redmi 5 (rosy)
-
+# TWRP device tree for Xiaomi Redmi 5 (rosy)
 ```
 #
 # Copyright (C) 2022 The Android Open Source Project
@@ -8,3 +7,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
+
+For building TWRP for MSM8953 models only.
