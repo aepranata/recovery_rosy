@@ -32,6 +32,12 @@ on fs
 
 on boot
     start health-hal-2-1
+    write /sys/bus/cpu/devices/cpu2/online 0
+    write /sys/bus/cpu/devices/cpu3/online 0
+    write /sys/bus/cpu/devices/cpu4/online 0
+    write /sys/bus/cpu/devices/cpu5/online 0
+    write /sys/bus/cpu/devices/cpu6/online 0
+    write /sys/bus/cpu/devices/cpu7/online 0
 
 ~on boot
 ~    mkdir /firmware
