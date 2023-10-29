@@ -51,7 +51,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 # TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    TARGET_KERNEL_CONFIG := rosy-perf_defconfig
+    TARGET_KERNEL_CONFIG := rosy-atiga_defconfig
     TARGET_KERNEL_SOURCE := kernel/xiaomi/rosy
 endif
 TARGET_KERNEL_VERSION := 4.9
