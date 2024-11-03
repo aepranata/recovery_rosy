@@ -14,13 +14,18 @@
 # limitations under the License.
 #
 
+# Release name (automatically taken from this file's suffix)
+PRODUCT_RELEASE_NAME := $(lastword $(subst /, ,$(lastword $(subst _, ,$(firstword $(subst ., ,$(MAKEFILE_LIST)))))))
+
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/rosy/device.mk)
 
-PRODUCT_NAME := omni_rosy
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
+PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_DEVICE := rosy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
